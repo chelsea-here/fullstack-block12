@@ -1,0 +1,135 @@
+body {
+  font-family: "Product Sans", "Google Sans", "Montserrat", ui-sans-serif,
+    system-ui, -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;
+}
+
+nav {
+  top: 0;
+}
+
+nav a {
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* TODO: add an transitioned underline for current anchor tag */
+
+.navGraphics {
+  position: fixed; /* keeps the bar at the top / bottom of the screen */
+  left: 0;
+  right: 0;
+  height: 7vh;
+  font-size: 1.2rem;
+  display: flex; /* allows the content to maintain design intent even if content is added */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* adds space between each direct child component */
+  color: white;
+  background-color: black;
+}
+
+svg {
+  fill: white;
+  height: 1.6rem;
+  width: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.behance {
+  height: 1.4 rem;
+}
+
+.linkedin {
+  height: 1.5 rem;
+}
+
+main {
+  margin-top: 7vh; /* offset the height of nav */
+  margin-bottom: 7vh; /* offset the height of the footer */
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+span {
+  font-weight: 300;
+}
+
+blockquote {
+  padding-top: 6rem;
+}
+footer {
+  bottom: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.illustration {
+  width: 60rem;
+  height: 86vh;
+  background-color: hotpink;
+  background-image: url(images/openartCC.png);
+  background-size: cover;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 6rem;
+  width: 100%;
+}
+
+.hobby {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hobbyDescription {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hobbyImageWrapper {
+  height: 6rem;
+  width: 6rem;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.photography {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/24/Nikon_D200_front_%28aka%29.jpg);
+}
+
+.volleyball {
+  background-image: url(https://cdn.abcteach.com/abcteach-content-free/docs/free_preview/v/volleyball3bw_p.png);
+}
+
+.pickleball {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/A_pickleball_paddle_with_two_pickleballs.jpg/1280px-A_pickleball_paddle_with_two_pickleballs.jpg);
+}
+
+.family {
+  background-image: url(images/TheCruzFamily-46.jpg);
+}
+
+.architecture {
+  background-image: url(images/architecture.jpg);
+}
+
+.woodWork {
+  background-image: url(images/woodwork.png);
+}
