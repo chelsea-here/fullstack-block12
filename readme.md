@@ -14,3 +14,6 @@ The portfolio page is the meat and potatoes of your personal site, here you want
 My Notes:
 
 hover effect thanks to: https://css-tricks.com/css-link-hover-effects/
+
+thanks to w3 schools for help with Javascript active class script.
+https://www.w3schools.com/howto/howto_js_active_element.asp

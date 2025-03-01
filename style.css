@@ -8,55 +8,7 @@ nav {
   top: 0;
 }
 
-nav a {
-  color: white;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  text-decoration: none;
-  position: relative;
-}
-
-/* thanks to css tricks */
-nav a::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  border-radius: 3%px;
-  background-color: orange;
-  bottom: -3px;
-  left: 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-nav a:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
-}
-
-nav a:active {
-  color: orange;
-}
-
-/* matches hover styling */
-nav a:active::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  border-radius: 3%px;
-  background-color: orange;
-  bottom: -3px;
-  left: 0;
-}
-
-nav a:visited {
-  color: rgb(150, 150, 150);
-}
-/* TODO: add an orange color for current anchor tag */
-
+/* this styles the navbar at the top and bottom of the page */
 .navGraphics {
   position: fixed; /* keeps the bar at the top / bottom of the screen */
   left: 0;
@@ -70,6 +22,63 @@ nav a:visited {
   gap: 1rem; /* adds space between each direct child component */
 
   background-color: black;
+}
+
+.navLink {
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.navLink:link {
+  color: white;
+}
+
+/* thanks to css tricks */
+.navLink::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 3%px;
+  background-color: orange;
+  bottom: -3px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navLink:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navLink:active {
+  color: orange;
+}
+
+/* matches hover styling */
+.navLink:active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 3%px;
+  background-color: orange;
+  bottom: -3px;
+  left: 0;
+}
+
+/* script runs to add class for active page link/anchor tag */
+.activePage {
+  color: orange;
+}
+
+.navLink:visited {
+  color: rgb(150, 150, 150);
 }
 
 svg {
