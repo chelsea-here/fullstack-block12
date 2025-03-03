@@ -10,7 +10,7 @@
   <body>
     <nav class="navGraphics">
       <div id="navDiv">
-        <a class="navLink activePage" href="./index.html">01 | home</a>
+        <a class="navLink" href="./index.html">01 | home</a>
         <a class="navLink" href="./about.html">02 | about me</a>
         <a class="navLink" href="./portfolio.html">03 | portfolio</a>
       </div>
@@ -22,26 +22,39 @@
         <div class="illustration"></div>
         <div class="contentWrapper">
           <div class="content">
-            <h1>Hi, my name is Chelsea Cruz, née Livingston!</h1>
-            <!-- todo: add waving hand -->
-            <h2>
-              I am a Web Developer, <span>(Building) </span>Architect, and
-              Technical Creator
-            </h2>
-            <!-- todo: animate above one by one ending on Technical Creator -->
-            <!-- todo: while next link is loading add lines outside of chevron image to represent loading -->
-
-            <figure>
-              <blockquote>
-                <p>
-                  “I am neither clever nor especially gifted. I am only very,
-                  very curious.”
-                </p>
-              </blockquote>
-              <figcaption>
-                <cite>-- attributed to Albert Einstein</cite>
-              </figcaption>
-            </figure>
+            <form action="./landing.html" target="_blank">
+              <h2>Let's connect:</h2>
+              <label for="name">First Name </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="jane doe"
+                required
+              />
+              <br />
+              <label for="email">Email Address </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="janedoe@gmail.com"
+                required
+              />
+              <br />
+              <label for="note">Note </label>
+              <br />
+              <textarea
+                name="note"
+                id="note"
+                placeholder="Hi, I'd love to chat with you about..."
+                rows="10"
+                cols="30"
+                required
+              ></textarea>
+              <br />
+              <button type="submit">Submit</button>
+            </form>
           </div>
         </div>
       </div>
@@ -97,7 +110,9 @@
           />
         </svg>
       </a>
-      <a href="./contact.html"><p class="contact">CONTACT ME</p></a>
+      <a href="./contact.html"
+        ><p class="contact activeContact">CONTACT ME</p></a
+      >
     </footer>
   </body>
 </html>

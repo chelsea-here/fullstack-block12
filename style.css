@@ -72,13 +72,18 @@ nav {
   left: 0;
 }
 
-/* script runs to add class for active page link/anchor tag */
+/* todo: get script to run to add/remove class for active page link/anchor tag */
 .activePage {
   color: orange;
+  transition: 0.2s;
 }
 
 .navLink:visited {
   color: rgb(150, 150, 150);
+}
+
+.activePage:visited {
+  color: orange;
 }
 
 svg {
@@ -100,6 +105,11 @@ svg {
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.activeContact {
+  color: orange;
+  border-color: orange;
 }
 
 .behance {
@@ -159,27 +169,27 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .descriptionWrapper {
+  .contentWrapper {
     position: fixed;
     width: 42vw;
-    height: 86vh;
+    height: 80vh;
     position: fixed;
-    overflow-y: scroll;
     overflow-x: hidden;
+    overflow-y: scroll;
+    top: 10vh; /* fits content within nav bar extents & adds 3vh gap*/
     right: 6vw;
+    bottom: 10vh; /* fits content within nav bar extents & adds 3vh gap */
     margin-left: 6vw;
   }
 }
 
-.description {
+.content {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-
-  width: 100%;
-  height: 100%;
+  min-height: 100%; /* important for scroll behavior on overflow content */
   text-wrap: pretty;
 }
 

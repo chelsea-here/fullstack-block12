@@ -9,16 +9,17 @@
   </head>
   <body>
     <nav class="navGraphics">
-      <div>
-        <a href="./index.html">01 | home</a>
-        <a href="./about.html">02 | about me</a>
-        <a href="./portfolio.html">03 | portfolio</a>
+      <div id="navDiv">
+        <a class="navLink" href="./index.html">01 | home</a>
+        <a class="navLink" href="./about.html">02 | about me</a>
+        <a class="navLink activePage" href="./portfolio.html">03 | portfolio</a>
       </div>
     </nav>
     <main>
       <div class="wrapper">
         <div class="illustration"></div>
-        <div class="description">
+        <div class="contentWrapper">
+          <div class="content">
           <div class="hobby">
             <h2><a href="https://www.behance.net/chelsealivingston">Web Designs</a></h2>
             <div class="hobbyDescription">
@@ -66,11 +67,10 @@
             </div>
           </div>
         </div>
-        
+          </div>
       </div>
     </main>
     <footer class="navGraphics">
-      <div>
         <a href="https://www.behance.net/chelsealivingston"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +121,8 @@
             />
           </svg>
         </a>
-      </div>
+        <a href="./contact.html"><p class="contact">CONTACT ME</p></a>
+      
     </footer>
   </body>
 </html>
